@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zayan Transport</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Zayan<span>Transport</span></h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <h2>Need a Truck? We’ve Got You Covered!</h2>
+    <p>Fast, reliable, and affordable truck rental service across the city.</p>
+    <button onclick="showBooking()">Book Now</button>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Zayan Paribahan~1</h3>
+        <p>Perfect for small goods or furniture.</p>
+      </div>
+      <div class="card">
+        <h3>Zayan Paribahan~2</h3>
+        <p>For medium loads and intercity delivery.</p>
+      </div>
+      <div class="card">
+        <h3>Zayan Paribahan~3</h3>
+        <p>For construction materials and heavy cargo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="booking" class="booking hidden">
+    <h2>Book Your Truck</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" id="pickup" placeholder="Pickup Location" required>
+      <input type="text" id="drop" placeholder="Drop Location" required>
+      <select id="truckType">
+        <option value="Mini Truck">Zayan Paribahan~1</option>
+        <option value="Medium Truck">Zayan Paribahan~2</option>
+        <option value="Heavy Truck">Zayan Paribahan~3</option>
+      </select>
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Zayan Transport. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:info@zayantransport.com">info@zayantransport.com</a></p>
+    <p>Follow us on 
+      <a href="#">Facebook</a>, 
+      <a href="#">Twitter</a>, 
+      <a href="#">Instagram</a>
+    </p>
+    <p>Privacy Policy | Terms of Service</p>
+    <p>Developed by Zayed Adnan</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
